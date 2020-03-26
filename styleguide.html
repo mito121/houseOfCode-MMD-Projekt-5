@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
     <head>
         <title>House of Code | Styleguide</title>
         <meta charset="UTF-8">
@@ -10,44 +10,32 @@
 
         <!-- js -->
         <script src="assets/js/jquery.js" type="text/javascript"></script>
+        <script src="assets/js/script.js" type="text/javascript"></script>
     </head>
     <body>
-        <section class="bgImg fullscreen">
+        <section class="bgImgWhite fullscreen">
+            <div class="row">
+                <h1>Overskrift 1</h1>
+                <h2>Overskrift 2</h2>
+                <p>Brødtekst lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-            <div id="xPos"></div>
-            <div id="yPos"></div>
-
-            <h1>Overskrift 1</h1>
-            <h2>Overskrift 2</h2>
-            <p>Brødtekst lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-            <!-- kodeblok -->
-            <div class="code-content">
-                <h1 class="d-inline">Full-service app-bureau</h1> {
-                <div class="indent">
-                    <span class="yellow">Denne</span> <span class="purple">her</span> <span class="blue">fede</span> <span class="orange">kode-effekt</span> er fed
+                <!-- kodeblok -->
+                <div class="code-content">
+                    <h1 class="d-inline">Full-service app-bureau</h1> {
+                    <div class="indent">
+                        <span class="yellow">R&aring;dgivning</span>, <span class="purple">design</span>, <span class="blue">udvikling</span>&nbsp;&amp;&nbsp;<span class="orange">vedligeholdelse </span>af apps
+                    </div>
+                    }
                 </div>
-                }
+                <!-- /kodeblok -->
+                <br>
+                <a href="#" class="btn">Eksempel knap</a>
+                <a href="#" class="btnSubmit">Eksempel knap</a>
             </div>
-            <!-- /kodeblok -->
-            <br>
-            <a href="#" class="btn">Eksempel knap</a>
         </section>
-        <!-- <script>
-            const el = document.body;
-
-            el.addEventListener("mousemove", (e) => {
-                var xPos = document.getElementById("xPos");
-                var yPos = document.getElementById("yPos");
-                //el.style.backgroundPositionX = -e.offsetX + "%";
-                //el.style.backgroundPositionY = -e.offsetY + "%";
-                xPos.innerHTML = -e.offsetX;
-                yPos.innerHTML = -e.offsetY;
-            });
-        </script> -->
 
         <script>
-            $(document).ready(function () {
+            /*$(document).ready(function () {
                 var movementStrength = 65;
                 var height = movementStrength / $(window).height();
                 var width = movementStrength / $(window).width();
@@ -58,7 +46,7 @@
                     var newvalueY = height * pageY * -1 - 50;
                     $('.bgImg').css("background-position", newvalueX + "px     " + newvalueY + "px");
                 });
-            });
+            });*/
         </script>
     </body>
 </html>

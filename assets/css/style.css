@@ -1,14 +1,19 @@
+/*** GLOBAL ***/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-*{
-    box-sizing:border-box;
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 html, body{
     color: #000;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
     font-weight: 400;
     font-size: 15px;
     line-height: normal;
     font-family: "Roboto Mono", monospace;
     letter-spacing: -0.013em;
+    margin:0;
+    padding:0;
 }::selection {
     background: #6696ac;
     color: #fff;
@@ -25,10 +30,33 @@ h2{
     font-size: 22px;
 }
 section{
-    padding: 100px 240px 200px 100px;
+    display:block;
 }
-.bgImg{
-    background-image:url("https://www.houseofcode.io/wp-content/themes/hoc/library/img/geil.png");
+section:first-of-type{
+    padding-top:85px;
+}
+.row{
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
+    margin: auto auto auto 240px;;
+}
+.white{
+    color:white;
+}
+.mx{
+    margin:0 auto !important;
+}
+.m-0{
+    margin-top:0;
+    margin-bottom:0;
+}
+mr-0{
+    margin-right:0 !important;
+}
+/* Moving background images */
+.bgImgDark{
+    background-image:url("../img/geil-dark-highres.svg");
     background-size:100%;
     background-repeat:no-repeat;
     background-position: -25px -50px;
@@ -36,7 +64,22 @@ section{
     top:0;
     width:100%;
     z-index:0;
+    background-color:#525F6D;
+    color:white !important;
 }
+.bgImgWhite{
+    background-image:url("../img/hoc_bg.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position: -25px -50px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:0;
+    background-color:white;
+    color:black !important;
+}
+/* Code block */
 .code-content {
     max-width: 800px;
     color: #515f6d;
@@ -48,8 +91,9 @@ section{
 .d-inline{
     display:inline;
 }
+/* /Code block/ */
 .fullscreen{
-    height:calc(100vh - 16px);
+    height:100vh;
     width:100%;
 }
 a.btn{
@@ -62,10 +106,21 @@ a.btn{
     font-size: 16px;
     transition:all 250ms;
 }
-a.btn:hover{
+a.btnSubmit{
+    display: inline-block;
+    padding: 15px;
+    border: 3px solid #a6bb75;
+    background:#a6bb75;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition:all 250ms;
+}
+/*a.btn:hover{
     color:white;
     background:#a6bb75;
-}
+}*/
 .yellow{
     color:#d8a55a;
 }
@@ -77,4 +132,113 @@ a.btn:hover{
 }
 .orange{
     color:#d7734a;
+}
+
+/*** HEADER ***/
+nav{
+    padding: 50px 40px;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 3;
+    overflow-y: auto
+}
+/*** HOME ***/
+.col-wrapper{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.home-col:hover{
+    cursor:pointer;
+}
+.home-col{
+    width:30%;
+    height:300px;
+    margin:15px;
+    color:white;
+    text-align:center;
+    position:relative;
+    user-select:none;
+    transition:background-color 250ms ease;
+}
+.home-col p{
+    width:100%;
+    padding:0 8px;
+    position:absolute;
+    bottom:5%;
+    left:0;
+}
+.b-blue:hover{
+    background-color:rgba(103, 150, 172, .2);
+}
+.b-blue{
+    border:6px solid #6796AC;
+}
+.b-blue h1{
+    color:#6796AC;
+    text-align:center;
+    margin:12px 0auto;
+}
+
+.b-red:hover{
+    background-color:rgba(211, 110, 117, .2);
+}
+.b-red{
+    border:6px solid #D36E75;
+}
+.b-red h1{
+    color:#D36E75;
+    text-align:center;
+    margin:12px 0auto;
+}
+
+.b-green:hover{
+    background-color:rgba(166, 188, 117, .2);
+}
+.b-green{
+    border:6px solid #A6BC75;
+}
+.b-green h1{
+    color:#A6BC75;
+    text-align:center;
+    margin:12px 0auto;
+}
+
+.b-yellow:hover{
+    background-color:rgba(216, 165, 92, .2);
+}
+.b-yellow{
+    border:6px solid #D8A55C;
+}
+.b-yellow h1{
+    color:#D8A55C;
+    text-align:center;
+    margin:12px 0auto;
+}
+
+.b-purple:hover{
+    background-color:rgba(170, 129, 173, .2);
+}
+.b-purple{
+    border:6px solid #AA81AD;
+}
+.b-purple h1{
+    color:#AA81AD;
+    text-align:center;
+    margin:12px 0auto;
+}
+
+.b-orange:hover{
+    background-color:rgba(214, 116, 75,.2);
+}
+.b-orange{
+    border:6px solid #D6744B;
+}
+.b-orange h1{
+    color:#D6744B;
+    text-align:center;
+    margin:12px 0auto;
 }

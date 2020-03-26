@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    box-sizing:border-box;
+}
+html, body{
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -0.013em;
+}::selection {
+    background: #6696ac;
+    color: #fff;
+}
+h1{
+    color: #515f6d;
+    font-weight: 700;
+    font-size: 40px;
+}
+h2{
+    margin-bottom: 20px;
+    color: #515f6d;
+    font-weight: 400;
+    font-size: 22px;
+}
+section{
+    padding: 100px 240px 200px 100px;
+}
+.bgImg{
+    background-image:url("https://www.houseofcode.io/wp-content/themes/hoc/library/img/geil.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position: -25px -50px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:0;
+}
+.code-content {
+    max-width: 800px;
+    color: #515f6d;
+    font-size: 40px;
+}
+.indent {
+    margin-left: 40px;
+}
+.d-inline{
+    display:inline;
+}
+.fullscreen{
+    height:calc(100vh - 16px);
+    width:100%;
+}
+a.btn{
+    display: inline-block;
+    padding: 15px;
+    border: 3px solid #a6bb75;
+    color: #a6bb75;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition:all 250ms;
+}
+a.btn:hover{
+    color:white;
+    background:#a6bb75;
+}
+.yellow{
+    color:#d8a55a;
+}
+.purple{
+    color:#aa81ac;
+}
+.blue{
+    color:#6696ac;
+}
+.orange{
+    color:#d7734a;
+}

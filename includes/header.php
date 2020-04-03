@@ -41,7 +41,7 @@
 
                 <ol>
                     <?php
-                    if ($_GET['page'] == 'forside' || $_GET['page'] == "") {
+                    if (empty($_GET['page']) || $_GET['page'] = 'forside') {
                         echo "";
                     } else {
                         echo "<a href=\"index.php\" class=\"back2start\"> < Tilbage </a> ";

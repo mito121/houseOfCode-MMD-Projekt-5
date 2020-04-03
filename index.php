@@ -4,7 +4,7 @@ require_once "includes/header.php";
 
 $page = '';
 
-$page = (isset($_GET['page'])) ? "pages/" . $_GET['page'] . '.php' : 'pages/home.php';
+$page = (isset($_GET['page'])) ? "pages/" . $_GET['page'] . '.php' : 'pages/forside.php';
 
 if (file_exists($page)) {
     include_once( $page );

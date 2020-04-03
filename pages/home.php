@@ -3,7 +3,7 @@
         <h1 class="white">Kunne I tænke jer en app?</h1>
     </div>
     
-    <div class="row mr-0">
+    <div class="row">
         <div class="col-wrapper">
             <div class="home-col b-blue">
                 <h1>Find en løsning</h1>
@@ -37,3 +37,5 @@
     </div>
     
 </section>
+
+<div style="height:200vh;"></div>

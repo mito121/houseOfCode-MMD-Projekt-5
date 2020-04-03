@@ -1,3 +1,10 @@
+// Mobile nav toggler
+$(document).ready(function(){
+	$('#mobile-toggle').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
 $(document).ready(function () {
     // Move background on mouse move
     // Dark

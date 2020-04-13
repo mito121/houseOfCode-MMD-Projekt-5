@@ -1,5 +1,5 @@
 <section class="bg-dark">
-    
+
     <div class="row">
         <div class="code-content">
             <h1 class="d-inline orange">Hvad er en app?</h1> {
@@ -9,27 +9,28 @@
             }
         </div>
     </div>
-    
+
     &nbsp;
-    
+
     <div class="row">
         <h2 class="red">Hvordan fungerer en app?</h2>
-        <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</p>
+        <p>Typisk kendes apps som små tilføjelsesprogrammer til eksempelvis smartphones. Mange kender apps som facebook til mobilen, spillet angry birds og funktionen lommelygte, der gør brug af mobilens flash. Det er altså små programmer eller software, som fungerer via en computer eller et API. <br><b>Læs mere...</b><br> Der findes et hav af apps inden for mange forskellige områder. Man kan få apps til at hjælpe med regnskab, bogføring, billedredigering, projektstyring, vejvisning og meget andet.</p>
     </div>
-    
+
     &nbsp;
-    
+
     <div class="row">
         <h2 class="blue">Hvad kan i opnå med en app?</h2>
-        <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</p>
+        <p>Mobilteknologien er i en rivende udvikling. Smartphone produkter som iPhone og Android har stor succes, og forbrugermarkedet driver derfor app-revolutionen. For virksomheder ligger der mange gemte muligheder i denne udvikling, men det kræver både vilje, mod og evner at ride med på bølgen. <br><b>Læs mere...</b><br> Over de sidste mange år har flere og flere mennesker dropper deres stationære og bærbare computere til fordel for tablets og smartphones. I begyndelsen af 2018 kom 51,2% af den globale internettrafik fra mobile enheder.</p>
     </div>
-    
+
     &nbsp;
-    
+
     <div class="row">
         <h2 class="green">Tilkobling til eksisterende systemer</h2>
-        <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</p>
+        <p>API'er gør det muligt for forskellige programmer at ”tale” sammen, og det kan blandt andet betyde, at du med API kan udveksle data på tværs af programmer. <br><b>Læs mere...</b><br> Fordelen ved et API er først og fremmest, at det letter arbejdet, fordi du slipper for manuelt at overføre oplysninger, som eksempelvis fra din webshop til dit regnskabsprogram.
+            Et godt API gør det ydermere lettere at udvikle et nyt program, fordi det kan forbinde og give adgang til alle oplysninger og ”byggeklodser”, der skal bruges. Når alle oplysninger er tilgængelige og samlet, kan programmøren lettere udvikle og få tingene til at arbejde sammen.</p>
     </div>
-    
-    
+
+
 </section>

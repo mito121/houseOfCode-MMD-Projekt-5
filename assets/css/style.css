@@ -293,6 +293,10 @@ html, body{
     .row{
         margin:0 auto !important;
     }
+    .w-80{
+        width:auto !important;
+        max-width:100% !important;
+    }
 }
 @media only screen and (max-width: 415px) {
     .row:first-child {
@@ -413,12 +417,6 @@ ul, ol{
 .w-80{
     max-width:80% !important;
     width:80% !important;
-}
-@media only screen and (max-width: 490px) {
-    .w-80{
-        width:auto !important;
-        max-width:100% !important;
-    }
 }
 .mx{
     margin:0 auto !important;
@@ -1041,6 +1039,7 @@ button:hover{
 /* Hvad er en app */
 .hvad-er-en-app .row{
     margin-top:28px;
+    margin-right:0;
 }
 .flex-heading{
     display: flex;
@@ -1060,7 +1059,7 @@ button:hover{
     height:24px;
     width:24px;
     transform: rotate(90deg);
-    transition: transform 250ms ease-in-out;
+    transition: transform 150ms ease;
 }
 #text1, #text2, #text3{
     display:none;

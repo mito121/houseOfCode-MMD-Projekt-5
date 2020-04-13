@@ -5,7 +5,7 @@
 
     <div class="row w-80">
         <div class="col-wrapper">
-            <a href="#" class="home-col b-green">
+            <a href="index.php?page=find-pris" class="home-col b-green">
                 <h1>Find en pris</h1>
                 <p>
                     Udfyld løsningsformularen og hjælp os med at finde den rette løsning til dig.

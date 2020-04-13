@@ -1,11 +1,19 @@
-// Mobile nav toggler
-$(document).ready(function(){
-	$('#mobile-toggle').click(function(){
-		$(this).toggleClass('open');
-	});
+// Smooth scrolling to ID's
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
 
 $(document).ready(function () {
+    // Mobile nav toggler
+    $('#mobile-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('#mobile-overlay').toggleClass('show-me');
+    });
+
     // Move background on mouse move
     // Dark
     var movementStrength = 65;
@@ -29,6 +37,83 @@ $(document).ready(function () {
         var newvalueY = height * pageY * -1 - 50;
         $('.bgImgWhite').css("background-position", newvalueX + "px     " + newvalueY + "px");
     });
-    
-    
 });
+
+// Waypoints
+var $section = $("section");
+var $currentSection = 0;
+var $up = $(".prev-section");
+var $down = $(".next-section");
+
+$section.waypoint(function (direction) {
+
+    if (direction == "down") {
+        $currentSection++;
+    } else {
+        $currentSection--;
+    }
+
+//    console.log($currentSection);
+
+    //Set links appropriately
+    if ($currentSection === 1) {
+        $down.attr("href", "#section2");
+
+        $('#navSec1').css("background", "#a6bb75");
+    } else {
+        $('#navSec1').css("background", "#525F6D");
+    }
+
+    if ($currentSection === 2) {
+        $up.attr("href", "#section1");
+        $down.attr("href", "#section3");
+        $('#navSec2').css("background", "#a6bb75");
+    } else {
+        $('#navSec2').css("background", "#525F6D");
+    }
+
+    if ($currentSection === 3) {
+        $up.attr("href", "#section2");
+        $down.attr("href", "#section4");
+        $('#navSec3').css("background", "#a6bb75");
+    } else {
+        $('#navSec3').css("background", "#525F6D");
+    }
+
+    if ($currentSection === 4) {
+        $up.attr("href", "#section3");
+        $('#navSec4').css("background", "#a6bb75");
+    } else {
+        $('#navSec4').css("background", "#525F6D");
+    }
+
+
+}, {offset: "40%"});
+
+
+// Find pris submit
+$('#submitForm').click(function (e) {
+    e.preventDefault();
+    $('#popupModal').css("display", "block");
+});
+// Cancel form submit
+$('#cancelFormSubmit').click(function (e) {
+    $('#popupModal').css("display", "none");
+});
+// Click on overlay
+$('#popupModal').click(function (e) {
+    $('#popupModal').css("display", "none");
+});
+// Confirm form submit
+$('#confirmFormSubmit').click(function (e) {
+    $('#confirmedSubmission').css("display", "block");
+    $('#confirmSubmission').css("display", "none");
+});
+// Tilbage til forsiden
+$('#back2home').click(function () {
+    window.location.href = "http://hoc.webnation.dk";
+});
+// prevent event bubbling
+function doNothing(e) {
+    e.stopPropagation();
+}

@@ -46,7 +46,6 @@ var $up = $(".prev-section");
 var $down = $(".next-section");
 
 $section.waypoint(function (direction) {
-
     if (direction == "down") {
         $currentSection++;
     } else {
@@ -86,8 +85,6 @@ $section.waypoint(function (direction) {
     } else {
         $('#navSec4').css("background", "#525F6D");
     }
-
-
 }, {offset: "40%"});
 
 

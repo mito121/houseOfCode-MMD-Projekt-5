@@ -14,9 +14,10 @@
     
     <div class="row">
         <h2 class="red">Hvordan fungerer en app?</h2>
-        <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</p>
+        <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. <span id="dots">...</span><span id="more"> Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</span></p>
+     <button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
-    
+   
     &nbsp;
     
     <div class="row">
@@ -31,5 +32,22 @@
         <p>Placeholder-tekst: Apps er programmer til telefonen hvorpå information kan være tilgængelig. Det smarte ved en app, kontra en hjemmeside, er at programfilerne allerede ligger på telefonen, dette gør det meget hurtigere at få data frem til modtageren. Derudover har apps også bedre mulighed for at bruge de mange features i smartphones</p>
     </div>
     
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
     
 </section>

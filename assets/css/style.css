@@ -19,6 +19,7 @@ html, body{
     background: #6696ac;
     color: #fff;
 }
+
 /*** TABLET ***/
 @media only screen and (max-width: 1350px) {
     .row{
@@ -334,6 +335,10 @@ html, body{
 .mobile-header-row{
     display:none;
 }
+
+/*for expand button in "hvad er en app" page*/
+#more {display: none;}
+
 #mobileNav{
     display: none;
 }

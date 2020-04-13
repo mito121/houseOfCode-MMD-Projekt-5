@@ -2,14 +2,20 @@
 
     <div class="row">
         <div class="code-content">
-            <h1 class="d-inline purple">Drift og service</h1> {
-            <div class="indent">
-                <span class="yellow">R&aring;dgivning</span>, <span class="orange">design</span>, <span class="blue">udvikling</span>&nbsp;&amp;&nbsp;<span class="red">vedligeholdelse </span>af apps
+            <h1 class="d-inline">Drift og service</h1> {
+            <div class="indent-xl">
+                <span class="yellow">R&aring;dgivning</span>, <span class="orange">design</span>, <span class="blue">udvikling</span>&nbsp;&amp;&nbsp;<span class="purple">vedligeholdelse </span>af apps
             </div>
             }
         </div>
     </div>
 
+    &nbsp;
+    
+    <div class="row">
+        <p>Her kan du få et overblik over generelle prisklasser i forhold til den virksomhedens størrelse og behov.</p>
+    </div>
+    
     &nbsp;
 
     <div class="row">
@@ -105,6 +111,6 @@
             </tfoot>
         </table>
         <br/>
-        <span class="muted">Prisen er ekslusiv moms. House of Code tilbyder også en Enterprise løsning, som starter fra 10.000 kr/md eks. moms, hvor løsningen kan integreres med ubegrænset.</span>
+        <span class="muted">Prisen er ekslusiv moms. House of Code tilbyder også en Enterprise løsning, som starter fra 10.000 kr/md eks. moms.</span>
     </div>
 </section>

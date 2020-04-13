@@ -20,7 +20,7 @@
         <!-- SECTION 1 -->
         <section class="fullscreen section"  id="section1">
             <div class="row">
-                <div class="code-content-xs">
+                <div class="code-content">
                     <h1 class="d-inline green">Find en pris</h1> {
                     <div class="indent">
                         Her kan du fortælle os hvad du har i tankerne.

@@ -477,6 +477,10 @@ mr-0{
 }
 .indent {
     margin-left: 40px;
+    font-size: 22px;
+}
+.indent-xl {
+    margin-left: 40px;
 }
 .d-inline{
     display:inline;
@@ -1052,17 +1056,37 @@ button:hover{
 .flex-heading h2{
     margin:0;
 }
-.flex-heading:hover{
-    cursor:pointer;
+/* Collapse */
+.b-green:after{
+    color:#AABA7D;
 }
-.hvad-er-en-app .arrow{
-    height:24px;
-    width:24px;
-    transform: rotate(90deg);
-    transition: transform 150ms ease;
+.b-blue:after{
+    color:#6796AC;
 }
-#text1, #text2, #text3{
-    display:none;
+.b-red:after{
+    color:#D36E75;
+}
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+.collapsible:after {
+    content: '\003c';
+    font-size:34px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: all 150ms ease;
+}
+.collapseOpen:after {
+    transform:rotate(-90deg);
+}
+.collapseContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 150ms ease;
 }
 
 /* FOOTER */

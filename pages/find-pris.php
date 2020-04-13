@@ -195,19 +195,17 @@
     </form>
 
     <div id="popupModal">
-        <div class="row">
-            <div class="formPopup" onclick="doNothing(e)">
-                <!-- Confirm submission -->
-                <div id="confirmSubmission">
-                    <p>Er du <span class="purple">duper</span> sikker på <span class="green">indsendelsen</span> af din sjæl, ja?</p><br>
-                    <button id="cancelFormSubmit">Tilbage</button> <button id="confirmFormSubmit">Send</button>
-                </div>
-                
-                <!-- Confirmed submission -->
-                <div id="confirmedSubmission">
-                    <p>Tak for din <span class="green">henvendelse</span>!</p> <p>Vi har <span class="green">modtaget</span> dine oplysninger, og vi vender tilbage til dig inden for <span class="green">2-3 hverdage</span>.</p>
-                    <button id="back2home">Tilbage til forsiden</button>
-                </div>
+        <div class="formPopup">
+            <!-- Confirm submission -->
+            <div id="confirmSubmission">
+                <p>Er du <span class="yellow">sikker</span> på at alle oplysniger er udfyldt <span class="green">korrekt</span>?</p><br>
+                <button id="cancelFormSubmit">Tilbage</button> <button id="confirmFormSubmit">Send</button>
+            </div>
+
+            <!-- Confirmed submission -->
+            <div id="confirmedSubmission">
+                <p>Tak for din <span class="green">henvendelse</span>!</p> <p>Vi har <span class="green">modtaget</span> dine oplysninger, og vi vender tilbage til dig inden for <span class="green">2-3 hverdage</span>.</p>
+                <button id="back2home">Tilbage til forsiden</button>
             </div>
         </div>
     </div>

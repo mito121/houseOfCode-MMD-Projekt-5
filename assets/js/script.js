@@ -97,10 +97,6 @@ $('#submitForm').click(function (e) {
 $('#cancelFormSubmit').click(function (e) {
     $('#popupModal').css("display", "none");
 });
-// Click on overlay
-$('#popupModal').click(function (e) {
-    $('#popupModal').css("display", "none");
-});
 // Confirm form submit
 $('#confirmFormSubmit').click(function (e) {
     $('#confirmedSubmission').css("display", "block");
@@ -110,10 +106,7 @@ $('#confirmFormSubmit').click(function (e) {
 $('#back2home').click(function () {
     window.location.href = "http://hoc.webnation.dk";
 });
-// prevent event bubbling
-function doNothing(e) {
-    e.stopPropagation();
-}
+
 
 
 //// Hvad er en app
@@ -137,7 +130,7 @@ btn1.addEventListener("click", function(){
         arrow1.style.transform = "rotate(90deg)";
     }else{
         text1.style.display = "block";
-        arrow1.style.transform = "rotate(00deg)";
+        arrow1.style.transform = "rotate(0deg)";
     }
 });
 

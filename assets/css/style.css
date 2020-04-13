@@ -19,7 +19,6 @@ html, body{
     background: #6696ac;
     color: #fff;
 }
-
 /*** TABLET ***/
 @media only screen and (max-width: 1350px) {
     .row{
@@ -82,7 +81,6 @@ html, body{
         display:block !important;
         overflow: visible;
     }
-    /*** MOBILE -ER DET MÅSKE HER DET BOR????????????????????????????????????????????? ***/
 
     #mobile-toggle:active{
 
@@ -329,16 +327,13 @@ html, body{
     }
 }
 
+/*** MOBILE ***/
 
 
 /*** DESKTOP ***/
 .mobile-header-row{
     display:none;
 }
-
-/*for expand button in "hvad er en app" page*/
-#more {display: none;}
-
 #mobileNav{
     display: none;
 }

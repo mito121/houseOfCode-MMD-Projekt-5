@@ -1038,6 +1038,34 @@ button:hover{
     color:white;
 }
 
+/* Hvad er en app */
+.hvad-er-en-app .row{
+    margin-top:28px;
+}
+.flex-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none;
+    border-width:5px;
+    padding:8px;
+}
+.flex-heading h2{
+    margin:0;
+}
+.flex-heading:hover{
+    cursor:pointer;
+}
+.hvad-er-en-app .arrow{
+    height:24px;
+    width:24px;
+    transform: rotate(90deg);
+    transition: transform 250ms ease-in-out;
+}
+#text1, #text2, #text3{
+    display:none;
+}
+
 /* FOOTER */
 footer{
     padding: 150px 100px;

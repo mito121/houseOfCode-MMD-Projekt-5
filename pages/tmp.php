@@ -32,4 +32,52 @@
             Et godt API gør det ydermere lettere at udvikle et nyt program, fordi det kan forbinde og give adgang til alle oplysninger og ”byggeklodser”, der skal bruges. Når alle oplysninger er tilgængelige og samlet, kan programmøren lettere udvikle og få tingene til at arbejde sammen.</p>
     </div>
 
+
 </section>
+
+<script>
+var btn1 = document.getElementById("show1");
+var btn2 = document.getElementById("show2");
+var btn3 = document.getElementById("show3");
+
+var text1 = document.getElementById("text1");
+var text2 = document.getElementById("text2");
+var text3 = document.getElementById("text3");
+
+var arrow1 = document.getElementById("arrow1");
+var arrow2 = document.getElementById("arrow2");
+var arrow3 = document.getElementById("arrow3");
+
+// Show or hide text 1
+btn1.addEventListener("click", function(){
+    if(text1.style.display == "block"){
+        text1.style.display = "none";
+        arrow1.style.transform = "rotate(0deg)";
+    }else{
+        text1.style.display = "block";
+        arrow1.style.transform = "rotate(180deg)";
+    }
+});
+
+// Show or hide text 2
+btn2.addEventListener("click", function(){
+    if(text2.style.display == "block"){
+        text2.style.display = "none";
+        arrow2.style.transform = "rotate(0deg)";
+    }else{
+        text2.style.display = "block";
+        arrow2.style.transform = "rotate(180deg)";
+    }
+});
+
+// Show or hide text 3
+btn3.addEventListener("click", function(){
+    if(text3.style.display == "block"){
+        text3.style.display = "none";
+        arrow3.style.transform = "rotate(0deg)";
+    }else{
+        text3.style.display = "block";
+        arrow3.style.transform = "rotate(180deg)";
+    }
+});
+</script>

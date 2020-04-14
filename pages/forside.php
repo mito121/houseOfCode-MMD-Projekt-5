@@ -1,6 +1,6 @@
 <section class="bgImgDark fullscreen">
     <div class="row">
-        <h1 class="white">Har du brug for en <span class="yellow">app</span>?</h1>
+        <h1 class="white headline">Har du brug for en <span class="yellow">app</span>?</h1>
     </div>
 
     <div class="row w-80">

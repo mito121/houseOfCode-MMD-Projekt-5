@@ -1,4 +1,4 @@
-<section class="bg-dark hvad-er-en-app">
+<br class="bigBreak"><br class="bigBreak"><section class="bg-dark hvad-er-en-app">
     <div class="row">
         <div class="code-content">
             <h1 class="d-inline orange">Hvad er en app?</h1> {

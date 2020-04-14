@@ -67,7 +67,6 @@
             <nav id="desktopNav">
                 <div class="logo">
                     <a href="index.php">
-                        <!--<img src="https://www.houseofcode.io/wp-content/themes/hoc/library/img/svg/hoc-icon-color.svg" alt="Logo"/>-->
                         <img src="assets/img/hoc-icon-white.svg" alt="Logo"/>
                     </a>
                 </div>

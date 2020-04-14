@@ -269,6 +269,9 @@ html, body{
     .form-row label {
         font-size: 15px !important;
     }
+    .formPopup {
+        left: 24.3% !important;
+    }
     .bigBreak{
         display: none !important;
     }
@@ -276,6 +279,11 @@ html, body{
         padding: 25px !important;
     }
 
+}
+@media only screen and (max-width: 760px) {
+    .formPopup {
+        left: 17.3% !important;
+    }
 }
 @media only screen and (max-width: 700px) {
     .formNav a{
@@ -287,6 +295,9 @@ html, body{
         top: 40% !important;
         width: 239px !important;
     }
+    .formPopup {
+        left: 11.3% !important;
+    }
     .col20{
         width:33% !important;
     }
@@ -294,9 +305,17 @@ html, body{
         justify-content: flex-start !important;
     }
 }
+@media only screen and (max-width: 650px) {
+    .formPopup {
+        left: 5.3% !important;
+    }
+}
 @media only screen and (max-width: 575px) {
     .service-table tr td{
         min-width: auto !important;
+    }
+    .formPopup {
+        width: 90% !important;
     }
 }
 @media only screen and (max-width: 490px) {
@@ -320,7 +339,7 @@ html, body{
 }
 @media only screen and (max-width: 415px) {
     .row:first-child {
-        padding-top: 4vh !important;
+        padding-top: 5vh !important;
     }
     .home-col{
         min-width:90% !important;
@@ -635,6 +654,9 @@ nav .logo{
     width: 97px;
     height: 54px;
     display: block;
+}
+.mobile-navlink{
+    opacity:0;
 }
 /*** HOME ***/
 .col-wrapper{
@@ -984,7 +1006,7 @@ button:hover{
     left:50px;
     top: 40.89%;
     width:50px;
-    z-index:10;
+    z-index:2;
 }
 .formNav a{
     display:block;
@@ -1136,3 +1158,11 @@ footer{
     padding:0;
     margin:0;
 }
+
+/** ANIMATION **/
+.opacity-0{opacity:0!important;}
+.animate-top{position:relative;animation:animatetop 1.1s}@keyframes animatetop{from{top:-80px;opacity:0} to{top:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft .5s}@keyframes animateleft{from{left:-150px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;animation:animateright .5s}@keyframes animateright{from{right:-150px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom .9s}@keyframes animatebottom{from{bottom:-100px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {animation:animatezoom .5s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}

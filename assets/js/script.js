@@ -12,6 +12,62 @@ $(document).ready(function () {
     $('#mobile-toggle').click(function () {
         $(this).toggleClass('open');
         $('#mobile-overlay').toggleClass('show-me');
+
+        //// MOBILE NAV LINKS ANIMATION 1
+        var mobile_navlinks = document.getElementsByClassName("mobile-navlink");
+        var i = 0;
+        var length = mobile_navlinks.length;
+        var animation = 'animate-top';
+
+        if ($('#mobile-overlay').hasClass("show-me")) {
+            function showMobileNavLinks() {
+                mobile_navlinks[i].style.opacity = 1;
+                mobile_navlinks[i].classList.add(animation);
+                i++;
+                if (i !== length) {
+                    setTimeout(showMobileNavLinks, 50);
+                }
+            }
+            showMobileNavLinks();
+        } else {
+            for (i = 0; i < mobile_navlinks.length; i++) {
+                mobile_navlinks[i].style.opacity = 0;
+                mobile_navlinks[i].classList.remove(animation);
+            }
+        }
+        //// MOBILE NAV LINKS ANIMATION 1
+
+        //// MOBILE NAV LINKS ANIMATION 2
+//        var mobile_navlinks = document.getElementsByClassName("mobile-navlink");
+//        var i = 0;
+//        var length = mobile_navlinks.length;
+//        var animation = 'animate-left';
+//
+//        if ($('#mobile-overlay').hasClass("show-me")) {
+//            function showMobileNavLinks() {
+//                mobile_navlinks[i].style.opacity = 1;
+//                mobile_navlinks[i].classList.add(animation);
+//                if (animation === 'animate-left') {
+//                    animation = 'animate-right';
+//                } else {
+//                    animation = 'animate-left';
+//                }
+//                i++;
+//                if (i !== length) {
+//                    setTimeout(showMobileNavLinks, 150);
+//                }
+//            }
+//        } else {
+//            for (i = 0; i < mobile_navlinks.length; i++) {
+//                mobile_navlinks[i].style.opacity = 0;
+//                mobile_navlinks[i].classList.remove("animate-left");
+//                mobile_navlinks[i].classList.remove("animate-right");
+//            }
+//        }
+//        showMobileNavLinks();
+        //// MOBILE NAV LINKS ANIMATION 2
+
+
     });
 
     // Move background on mouse move

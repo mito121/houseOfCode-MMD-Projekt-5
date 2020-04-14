@@ -43,14 +43,22 @@
                             </a>
                         </div>
                     </div>
-                    <ol>
-                        <li><a href="#">Projekter</a></li>
-                        <li><a href="#">Det vi tilbyder</a></li>
-                        <li><a href="index.php">Find en pris</a></li>
-                        <li><a href="#">Lær os at kende</a></li>
-                        <li><a href="#">Jobs i huset</a></li>
-                        <li><a href="#">Blog & Nyheder</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                    <?php
+                    if ($_GET['page'] == 'forside' || !isset($_GET['page']) || empty($_GET['page'])) {
+                        echo "";
+                    } else {
+                        echo "<a href=\"index.php\" class=\"back2start\"> &lt; Tilbage </a> ";
+                    }
+                    ?>
+                    <ol id="mobile-navlinks">
+
+                        <li class="mobile-navlink"><a href="#">Projekter</a></li>
+                        <li class="mobile-navlink"><a href="#">Det vi tilbyder</a></li>
+                        <li class="mobile-navlink"><a href="index.php">Find en pris</a></li>
+                        <li class="mobile-navlink"><a href="#">Lær os at kende</a></li>
+                        <li class="mobile-navlink"><a href="#">Jobs i huset</a></li>
+                        <li class="mobile-navlink"><a href="#">Blog & Nyheder</a></li>
+                        <li class="mobile-navlink"><a href="#">Kontakt</a></li>
                     </ol>
                 </div>
             </nav>
